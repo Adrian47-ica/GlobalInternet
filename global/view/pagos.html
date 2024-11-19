@@ -425,4 +425,92 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 200px 1fr;
+    }
+
+    .plan-info {
+        display: none; /* Oculta el panel derecho en tablets */
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+        transition: left 0.3s;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    .menu {
+        display: none; /* Oculta el menú principal */
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar .logo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .logo {
+        font-size: 1rem;
+    }
+
+    .main-content h2,
+    .plan-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .payment-methods {
+        flex-direction: column;
+    }
+
+    .payment-form {
+        padding: 1rem;
+    }
+
+    .input-group label {
+        font-size: 0.9rem;
+    }
+
+    .input-group input,
+    .input-group select {
+        font-size: 0.9rem;
+    }
+}
 </style>
