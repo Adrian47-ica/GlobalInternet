@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Global Internet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #cfcfcf;
+    color: #000;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+    }
+
+    header .logo {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    header nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 100px);
+    }
+
+    .login-container {
+        background-color: transparent;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .login-card {
+        background-color: #fff;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .login-card .avatar {
+        margin-bottom: 15px;
+    }
+
+    .login-card h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .input-group {
+        display: flex;
+        align-items: center;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    .input-group input {
+        border: none;
+        background: none;
+        outline: none;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .input-group .iconify {
+        color: #888;
+    }
+
+    .show-password {
+        cursor: pointer;
+    }
+
+    .forgot-password {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+    button {
+        background-color: #000;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #333;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        background: #000;
+        color: white;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-links {
+        margin-top: 10px;
+    }
+
+    .footer-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="iconify" data-icon="mdi:web" data-width="30" data-height="30"></span>
+            <span>GLOBAL INTERNET</span>
+        </div>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <div class="login-container">
+            <div class="login-card">
+                <div class="avatar">
+                    <span class="iconify" data-icon="mdi:account" data-width="50" data-height="50"></span>
+                </div>
+                <h2>Inicia sesión</h2>
+                <form>
+                    <div class="input-group">
+                        <span class="iconify" data-icon="mdi:email-outline"></span>
+                        <input type="email" placeholder="user@email.com" >
+                    </div>
+                    <div class="input-group">
+                        <span class="iconify" data-icon="mdi:lock-outline"></span>
+                        <input type="password" placeholder="Contraseña" >
+                        <span class="iconify show-password" data-icon="mdi:eye-outline"></span>
+                    </div>
+                    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                    <a href="monitoreo.html"><button type="button">Entrar</button></a>
+                    
+                </form>
+                <p>Si aún no tienes cuenta, <a href="registro.html">REGÍSTRATE</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>© 2024 ItSoluciones.Todos los derechos reservados.</div>
+        <div>
+            <a href="#">Terminos de servicio</a>
+            <a href="#">Privacidad</a>
+        </div>
+    </footer>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</body>
+</html>

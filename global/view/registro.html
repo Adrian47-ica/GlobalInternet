@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Global Internet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+        background-color: #d3d3d3;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+    }
+
+    header .logo {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    header nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+    }
+
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+.registro-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+.icono-usuario {
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+
+.form-group span {
+    margin-right: 10px;
+    color: #555;
+}
+
+.form-group input {
+    border: none;
+    outline: none;
+    flex: 1;
+    background: none;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.eye-icon {
+    cursor: pointer;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-buttons a{
+    text-decoration: none;
+}
+
+.btn-finalizar, .btn-cancelar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-finalizar {
+    background: #000;
+    color: #fff;
+}
+
+.btn-cancelar {
+    background: #ccc;
+    color: #000;
+}
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        background: #000;
+        color: white;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="iconify" data-icon="mdi:web" data-width="30" data-height="30"></span>
+            <span>GLOBAL INTERNET</span>
+        </div>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <div class="registro-container">
+            <div class="registro-card">
+                <div class="icono-usuario">
+                    <span class="iconify" data-icon="mdi:account-plus-outline" data-width="48" data-height="48"></span>
+                </div>
+                <h2>Regístrate</h2>
+                <form>
+                    <div class="form-group">
+                        <span class="iconify" data-icon="mdi:account-outline"></span>
+                        <input type="text" placeholder="Nombre" value="Juan Perez Peralta">
+                    </div>
+                    <div class="form-group">
+                        <span class="iconify" data-icon="mdi:map-marker-outline"></span>
+                        <input type="text" placeholder="Localidad" value="Jimulco, Coah.">
+                    </div>
+                    <div class="form-group">
+                        <span class="iconify" data-icon="mdi:email-outline"></span>
+                        <input type="email" placeholder="Correo" value="juan12@email.com">
+                    </div>
+                    <div class="form-group">
+                        <span class="iconify" data-icon="mdi:lock-outline"></span>
+                        <input type="password" placeholder="Contraseña" value="***********">
+                        <span class="iconify eye-icon" data-icon="mdi:eye-outline"></span>
+                    </div>
+                    <div class="form-group">
+                        <span class="iconify" data-icon="mdi:lock-outline"></span>
+                        <input type="password" placeholder="Confirmar contraseña" value="***********">
+                        <span class="iconify eye-icon" data-icon="mdi:eye-outline"></span>
+                    </div>
+                    <div class="form-buttons">
+                        <a href="monitoreo.html"><button type="button" class="btn-finalizar">Finalizar</button></a>
+                        <a href="../"><button type="button" class="btn-cancelar">Cancelar</button></a>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>© 2024 ItSoluciones.Todos los derechos reservados.</div>
+        <div>
+            <a href="#">Terminos de servicio</a>
+            <a href="#">Privacidad</a>
+        </div>
+    </footer>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</body>
+</html>
